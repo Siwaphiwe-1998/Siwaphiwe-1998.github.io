@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <title>MQUMA LOCAL MUNICIPALITY SITE</title>
+    
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+    
+ 
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="assets/css/StyleMnquma.css">
+   
+
+  </head>
+
+
+<body style="background-color:grey;">
+
+  
+
+  <header class="main-header clearfix" role="header">
+    <div class="logo">
+      <a href="index.html" class="w3-bar-item w3-button w3-left-align"><em>MNQUMA </em>WEB</a>
+      <a href="javascript:void(0)" class="w3-button w3-white w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+    </div>
+    
+    
+      <div class="main-menu">
+        <li><a href="index.html" class="external w3-bar-item w3-button  w3-hide-small">HOME</a></li>
+        <li><a href="Departments.html" class="w3-bar-item w3-button  w3-hide-small">DEPARTMENTS</a></li>
+        <li><a href="water.html" class="external w3-bar-item w3-button  w3-hide-small">Water</a></li>
+        <li><a href="Electricity.html" class="external w3-bar-item w3-button  w3-hide-small">Electricity</a></li>
+        <li><a href="News.html" class="w3-bar-item w3-button  w3-hide-small">Latest news</a></li>
+        <li><a href="About/Aboutus.html"class="w3-bar-item w3-button  w3-hide-small">About us</a></li>
+    
+       </div>
+
+          <div id="demo" class="w3-bar-block w3-green w3-hide w3-hide-large w3-hide-medium">
+        <li><a href="index.html" class="external w3-bar-item w3-button">HOME</a></li>
+        <li><a href="Departments.html" class="w3-bar-item w3-button">DEPARTMENTS</a></li>
+        <li><a href="water.html" class="external w3-bar-item w3-button">Water</a></li>
+        <li><a href="Electricity.html" class="external w3-bar-item w3-button">Electricity</a></li>
+        <li><a href="News.html" class="w3-bar-item w3-button ">Latest news</a></li>
+        <li><a href="About/Aboutus.html"class="w3-bar-item w3-button">About us</a></li>
+      
+         </div>
+
+    
+         <script>
+        function myFunction() {
+        var x = document.getElementById("demo");
+        if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+        } else { 
+         x.className = x.className.replace(" w3-show", "");
+         }
+       }
+       </script>
+
+
+
+   
+  </header>
+     
+   
+
+
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+   <center><h1 style="color:white">CALCULATE WATER BILL DUE HERE</h1> </center>
+   
+            <br></br>
+            <p> <center><h2 style="color:white"> PREVIOUS MONTH</h2></center></p>
+            <br></br>
+           
+       
+         <center> <input type='text' id='number'></center>
+  
+           <p> <center><h2 style="color:white"> CURRENT MONTH</h2></center></p>
+           <br></br>
+           
+         
+          <center> <input type='text' id='number2'></center>  
+          <br></br>
+        
+        
+         
+       <center><button onclick= "alert(calc())"><b>CALCULATE<b></button> </center>
+
+       	 <br></br>
+       
+    
+
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+   <footer class="container">
+    <div class="w3-container w3-padding-30">
+      <div class="row">
+        <div class="col-md-12">
+          <p class="w3-center w3-left-align "><i ></i> Copyright 2020 by Padre 
+          
+           | Design: <a href="" rel="sponsored" target="_parent">Siwaphiwe Mbelu; customercare@mnquma.gov.za Telephone: 047 401 2400; Fax: 047 491 0195</a> </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+<script>
+  
+  function calc(){
+
+    var p1=parseInt(document.getElementById('number').value);
+    var p2=parseInt(document.getElementById('number2').value);
+    var tot=(p2-p1);
+    var b1= tot-34.99;
+    var b2= b1*56.91;
+    var units= 34.99+b1;
+    var amount= 993.21 + b2;
+        
+      return "Killo-Liters: " + tot  +  "\n" +"Total Bill to be paid is :R "+amount;
+    
+    
+  }
+
+ 
+</script>
+
+</body>
+</html>
